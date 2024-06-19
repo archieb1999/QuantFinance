@@ -22,7 +22,7 @@ This repository contains a collection of quantitative finance models implemented
 Monte Carlo simulations are used to model the probability of different outcomes in a process that is influenced by random variables. This method is widely used in finance to simulate the future price of stocks or assets. The basic idea is to simulate a large number of potential future stock price paths and then analyze the distribution of the simulated outcomes.
 
 ### Mathematical Formulation
-The stock price \( S_t \) at time \( t \) can be modeled using the geometric Brownian motion:
+The stock price $\( S_t \)$ at time \( t \) can be modeled using the geometric Brownian motion:
 \[ S_t = S_0 \exp\left( \left( \mu - \frac{\sigma^2}{2} \right)t + \sigma W_t \right) \]
 where:
 - \( S_0 \) is the initial stock price
