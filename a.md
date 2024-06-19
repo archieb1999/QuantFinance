@@ -1,4 +1,5 @@
 
+```markdown
 # Quantitative Finance Models
 
 This repository contains a collection of quantitative finance models implemented in Python. These models were developed during my undergraduate studies at IIT ISM, when I was exploring the field of quantitative finance. The repository includes implementations of various pricing models, risk management techniques, and portfolio optimization methods.
@@ -22,7 +23,7 @@ This repository contains a collection of quantitative finance models implemented
 Monte Carlo simulations are used to model the probability of different outcomes in a process that is influenced by random variables. This method is widely used in finance to simulate the future price of stocks or assets. The basic idea is to simulate a large number of potential future stock price paths and then analyze the distribution of the simulated outcomes.
 
 ### Mathematical Formulation
-The stock price $\( S_t \)$ at time \( t \) can be modeled using the geometric Brownian motion:
+The stock price \( S_t \) at time \( t \) can be modeled using the geometric Brownian motion:
 \[ S_t = S_0 \exp\left( \left( \mu - \frac{\sigma^2}{2} \right)t + \sigma W_t \right) \]
 where:
 - \( S_0 \) is the initial stock price
@@ -86,7 +87,9 @@ if __name__ == '__main__':
 
     # Plot the generated process
     plt.figure(figsize=(10, 6))
-    plt.plot(np.linspace(0, T, N), ou_process)
+    plt.plot(np.linspace(0, T, N), ou_process
+
+)
     plt.xlabel('Time')
     plt.ylabel('Value')
     plt.title('Ornstein-Uhlenbeck Process')
@@ -196,7 +199,9 @@ if __name__ == '__main__':
 
     # Calculate parameters for Monte Carlo simulation
     mu = stock_data['returns'].mean()
-    sigma = stock_data['returns'].std()
+    sigma = stock_data['returns'].std
+
+()
 
     # Create an instance of ValueAtRiskMonteCarlo
     model = ValueAtRiskMonteCarlo(position, mu, sigma, confidence_level, 1, num_simulations)
@@ -292,7 +297,9 @@ if __name__ == '__main__':
     T = 2.0       # Time to maturity in years
     N = 1000      # Number of time steps
     F = 1000      # Face value of the bond
-    num_simulations = 10000  # Number of simulations
+    num_simulations = 10000  #
+
+ Number of simulations
 
     # Calculate the bond price using Monte Carlo simulation
     bond_price = monte_carlo_simulation(F, r0, kappa, theta, sigma, T, N, num_simulations)
@@ -392,3 +399,4 @@ These models provide a foundation for understanding and implementing various con
 Please note that the implementations in this repository are for educational purposes and may not reflect the complexities and nuances of real-world financial markets. It is recommended to use these models as a starting point and to further enhance them based on specific requirements and market conditions.
 
 The ordering of the models in the table of contents has been adjusted to reflect a progression from simpler to more complex models, starting with Monte Carlo simulations for stock price prediction and option pricing, moving on to interest rate models like Vasicek and Ornstein-Uhlenbeck, and then covering risk management techniques such as Value at Risk (VaR). The Black-Scholes model for option pricing is included as a more advanced pricing model. Finally, the Capital Asset Pricing Model (CAPM) and Markowitz portfolio optimization represent higher-level concepts in asset pricing and portfolio management.
+```
