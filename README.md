@@ -1,6 +1,6 @@
 # Quantitative Finance Models
 
-This repository contains a collection of quantitative finance models implemented in Python. These models were studied and implemented during my undergraduate years, when I was exploring the field of quantitative finance out of personal interest alongside my formal studies in geophysics. The repository includes implementations of various pricing models, risk management techniques, and portfolio optimization methods that have been widely used in the field of quantitative finance since the mid-20th century. Many of these models have undergone extensions and enhancements in the late 20th century and recent years.
+This repository contains a collection of quantitative finance models that I studied and implemented out of personal interest alongside my formal undergraduate studies in geophysics. The repository includes various pricing models, risk management techniques, and portfolio optimization methods that have been widely used in the field of quantitative finance since the mid-20th century, with many of these models undergoing extensions and enhancements in the late 20th century and recent years.
 
 ## Table of Contents
 
